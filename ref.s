@@ -1,0 +1,5 @@
+# FLAG CONSTANTS
+.equ WAKE_FLAG,	1
+.equ ADD_FLAG,	2
+.equ DEL_FLAG,	3
+.equ LIST_FLAG, 4
