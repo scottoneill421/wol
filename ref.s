@@ -3,3 +3,5 @@
 .equ ADD_FLAG,	2
 .equ DEL_FLAG,	3
 .equ LIST_FLAG, 4
+
+.equ BUFSIZE, 256

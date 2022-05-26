@@ -1,8 +1,8 @@
 # PURPOSE:	Get the flag
 #
-# INPUT:	flag string
+# INPUT:	%rdi - flag string
 #
-# OUTPUT:	flag option
+# OUTPUT:	%rax - flag option
 #
 # REGISTERS:
 #	%rdi - flag
