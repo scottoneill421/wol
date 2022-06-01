@@ -4,4 +4,13 @@
 .equ DEL_FLAG,	3
 .equ LIST_FLAG, 4
 
-.equ BUFSIZE, 256
+.equ BUFSIZE, 		4096
+.equ MAX_HOST_LEN,	30
+.equ MPCKSIZE,		200
+.equ MACSIZE,		12
+
+#ASCII CODES
+.equ END_OF_FILE,	0
+.equ END_OF_HOST,	37
+.equ NEWLINE,		10
+.equ COLON,		58	

@@ -42,6 +42,10 @@
 _start:
 	movq %rsp, %rbp
 
+	movq $2, %rax
+	cmpq %rax, ST_ARGC(%rbp)
+	jl help
+
 	# check flag is correct length (no -wa or -dkjhljh)
 	movq ST_OPT(%rbp), %rdi
 	call str_len
@@ -64,7 +68,7 @@ _start:
 
 # display help text, then exit
 help:
-	movq $1, %rax
+	movq $SYS_WRITE, %rax
 	movq $STDOUT, %rdi
 	movq $help_text, %rsi
 	movq $help_len, %rdx

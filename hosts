@@ -1,2 +1,3 @@
-# HOSTS FOR WOL
-testhost%AA:BB:CC:11:22:33;
+testhost%AA:BB:CC:11:22:33
+host%11:22:33:AA:BB:CC
+testmachine%FF:EE:DD:55:44
